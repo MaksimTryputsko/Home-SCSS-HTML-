@@ -1270,9 +1270,24 @@ body {
     height: 560px;
   }
   img[hidden] {
+    position: relative;
     display: block;
     width: 340px;
     height: 280px;
+  }
+  .img_hidden_play-1[hidden] {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    left: 1%;
+  }
+  .img_hidden_play-2[hidden] {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right: 1%;
   }
   .main__bg-fantasie_wrapper__box-text-h {
     font-style: normal;
@@ -1490,6 +1505,14 @@ body {
     position: absolute;
     bottom: -270px;
     right: 28%;
+  }
+}
+@media (max-width: 540px) {
+  .main__design-project__name_h {
+    display: none;
+  }
+  .main__design-project__name_img {
+    display: none;
   }
 }
 @media (max-width: 423px) {
@@ -1986,10 +2009,16 @@ body {
     display: none;
   }
   .ask {
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
     height: 540px;
     left: 1%;
     top: 0.1%;
+    background-image: none;
+    background-color: #131313;
   }
   .ask__name-phone {
     display: flex;

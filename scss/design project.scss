@@ -198,6 +198,14 @@ font-weight: bold;
     }
 
 }
+@media (max-width:540px){
+    .main__design-project__name_h{
+        display:none;
+    }
+    .main__design-project__name_img{
+        display:none;
+    }
+}
 @media(max-width:423px){
     .main__design-project__name_img{
         display:none;

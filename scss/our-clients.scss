@@ -193,10 +193,16 @@
         display:none;
     }
     .ask{
-        width: 350px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
         height: 540px;
         left:1%;
         top:0.1%;
+        background-image: none;
+        background-color:$bg-color;
     }
     .ask__name-phone{
         display:flex;
