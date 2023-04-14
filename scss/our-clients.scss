@@ -13,26 +13,17 @@
     gap:15px;
 }
 .main__our-clients__text__h {
-    font-family: 'Yeseva One',"sans-serif";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    color: #181818;
-   
-    
-}
-.main__our-clients__text__img {
+    color: $bg-color;   
 }
 .main__our-clients__text__p {
     font-family: 'FuturaBookC',"sans-serif";
     font-size: 20px;
     line-height: 27px;
     text-align: center;
-    color: #363636;
-
+    color: $color3;
+    font-weight: 400;
 }
 .main__our-clients__characteristics {
     display: flex;
@@ -45,8 +36,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap:30px;
-    
-
 }
 .main__our-clients__characteristics__h {
     display:flex;
@@ -54,51 +43,42 @@
     align-items: center;
     gap:15px;
     div{
-        font-family: 'Yeseva One', "sans-srif";
-        font-style: normal;
-        font-weight: bold;
         font-size: 18px;
         line-height: 23px;
-        color: #181818;
-
-        
+        color: $color8;   
     }
 }
 .main__our-clients__characteristics__text {
     font-family: 'FuturaBookC', "sans-serif";
     font-size: 15px;
     line-height: 180%;
-    color: #959595;
+    color: $color4;
+    font-weight: 400;
 }
 .test99{
     position: relative;
 }
 .ask{
-    z-index:2;
+    z-index: 2;
     background-image: url(../img/ask/Rectangle.png);
     width: 883px;
     height: 445px;
     position: absolute;
     top: 52%;
-    left: 27%;
+    left: 20%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color:$color1;
-    gap:50px;
+    color: $color1;
+    gap: 50px;
     span{
         font-family: 'FuturaBookC';
         font-size: 15px;
         line-height: 20px;
-        color: rgba(255, 255, 255, 0.5);
+        color: $color6;
     }
     .ask__name {
-        font-family: 'Yeseva One',"sans-serif";
-        font-style: bold;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 28px;
         text-align: center;
         text-transform: uppercase;
     }
@@ -134,34 +114,31 @@
         display:flex;
         gap:10px;
     }
-   
-    
 }
 @media(max-width:1100px){
     .main__our-clients-wrapper{
         display:none;
     }
     .ask{
-        top:200px;
-        left:100px;
-       
+        top: 200px;
+        left: 100px;
     }   
 }
 @media(max-width:985px){
     .ask{
-        top:200px;
-        left:-150px; 
+        top: 200px;
+        left: -150px; 
     }
 }
 @media(max-width:740px){
     .ask{
         width: 350px;
         height: 540px;
-        left:24%;
-        top:27%;
+        left: 24%;
+        top: 27%;
     }
     .ask__name-phone{
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
     .ask{
@@ -176,36 +153,35 @@
                 font-family: 'FuturaMediumC',"sans-serif";
                 font-size: 18px;
                 line-height: 25px;
-                color:$color1;
+                color: $color1;
             }
         }
         }        
-
 }
 @media(max-width:491px){
     .ask{
-        top:10%;
-        left:60px;
+        top: 10%;
+        left: 60px;
     }
 }
 @media(max-width:365px){
     .main__our-clients-wrapper{
-        display:none;
+        display: none;
     }
     .ask{
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 330px;
         height: 540px;
-        left:1%;
-        top:0.1%;
+        left: 1%;
+        top: 0.1%;
         background-image: none;
-        background-color:$bg-color;
+        background-color: $bg-color;
     }
     .ask__name-phone{
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
     .ask{
@@ -220,7 +196,7 @@
                 font-family: 'FuturaMediumC',"sans-serif";
                 font-size: 18px;
                 line-height: 25px;
-                color:$color1;
+                color: $color1;
             }
         }
         }        

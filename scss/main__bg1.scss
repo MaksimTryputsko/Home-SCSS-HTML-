@@ -1,7 +1,6 @@
 .Main__bg-Houpt{
-    background-image: url(../img/img-bg1/bg-balck.png);
+    background-image: url(../img/img-bg1/bg-black.png);
 }
-
 .main__bg-1{
     position: relative;
     max-width: 100%;
@@ -18,31 +17,25 @@
     height: 100%;
     position: absolute;
     top: 0; left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: $color5-rgba;
 }
 .main__main__bg-1__box-instagram {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index:2;
-    
+    z-index: 2;
     width: 40px;
     writing-mode: vertical-rl;
     color:  $color2;
-    background-color: $bg-color ;
-
-    
+    background-color: $bg-color; 
 }
 .main__main__bg-1__box-information {
     z-index:2;
     display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: left;
-   
-   
-   
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
 }
 .main__main__bg-1__box-information_h {
     font-family: $FontFamily;
@@ -68,10 +61,10 @@
 }
 .main__main__bg-1__box-information_button {
     padding-top: 15px;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap:20px;
+    gap: 20px;
     font-family: $FontFamily;
     line-height: 15px;
     text-align: center;
@@ -86,6 +79,10 @@
     line-height: 15px;
    
 }
+.main__main__bg-1__box-information_button-1:hover {
+    @include hover-for-batton;
+}
+
 .main__main__bg-1__box-information_button-2 {
     
     width: 230px;
@@ -94,9 +91,12 @@
     color: $color1;
     outline: none;
     background:transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $color1;
     border-radius: 2px;
     
+}
+.main__main__bg-1__box-information_button-2:hover {
+    @include hover-for-batton;
 }
 .main__box-scroll {
     z-index:2;

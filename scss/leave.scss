@@ -17,30 +17,25 @@
     display:flex;
     flex-direction: column;
     justify-content: space-around;  
-
     align-items: center;
-    color: white;
+    color: $color1;
 }
-
 .main__leave__box-leav__inf_h {
     font-family: 'FuturaDemiC';
     font-size: 20px;
     line-height: 25px;
     text-align: center;
-    font-weight: bold;
-
 }
 .main__leave__box-leav__inf_input {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    // align-items: center;
     gap:25px;
     span {
         font-family: 'FuturaBookC';
         font-size: 15px;
         line-height: 20px;
-        color: rgba(255, 255, 255, 0.5);
+        color: $color6;
     }
     input{
         width: 400px;
@@ -48,8 +43,6 @@
         border-top: none;
         border-left: none;
         border-right: none;
-        // border: none;
-        // border-bottom: rgba(231, 93, 93, 0.15);;
         font-family: 'FuturaMediumC';
         font-size: 18px;
         line-height: 25px;
@@ -66,19 +59,18 @@
 }
 .main__leave__box-leav__inf_button{
     width: 5%;
-    
     button{
-        
         @include batton;
         width: 215px ;
         height: 50px ;
         font-family: 'FuturaDemiC';
         font-size: 13px;
         line-height: 18px;
-        font-weight:bold;
         text-align: center;
-        text-transform: uppercase;
-        
+        text-transform: uppercase;   
+    }
+    button:hover{
+        @include hover-for-batton;
     }
 }
 .main__leave__box-leav-pig {
@@ -93,8 +85,6 @@
 .main__leave__box-leav-pig_inf {
     padding-bottom: 20px;
     font-family: 'FuturaDemiC';
-    font-size: 20px;
-    font-weight: bold;
     line-height: 25px;
     color: $color2;
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
@@ -108,6 +98,4 @@
     .main__leave_wrapper {
         display:none;
     }
-
-
 }

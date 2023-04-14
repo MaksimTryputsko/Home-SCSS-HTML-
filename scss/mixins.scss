@@ -65,3 +65,11 @@
     text-transform: uppercase;
 
 }
+@mixin hover-for-batton{
+        background: white;
+        color: black;
+}
+@mixin hover-for-batton-red{
+    background: red;
+    color: black;
+}

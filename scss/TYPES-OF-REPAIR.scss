@@ -89,6 +89,7 @@
     bottom:15%;
     left:7%;   
 }
+
 .main__TYPES-OF-REPAIR_wrapper__img__button-2{
     position: absolute;
     bottom:15%;
@@ -109,6 +110,9 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
+}
+.main__TYPES-OF-REPAIR_wrapper__img__button_characteristics:hover{
+    @include hover-for-batton-red;
 }
 @media (max-width: 1100px){
     .main__TYPES-OF-REPAIR_wrapper__name {

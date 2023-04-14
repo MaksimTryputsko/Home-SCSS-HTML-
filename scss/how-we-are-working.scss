@@ -15,8 +15,6 @@
 }
 .main__How-we-are-working__inf__h {
     div{
-        font-family: 'Yeseva One';
-        font-style: normal;
         font-weight: 400;
         font-size: 27px;
         line-height: 37px;
@@ -35,18 +33,12 @@
     flex-direction: column;
     gap:15px;
     .main__How-we-are-working__inf__text__namber {
-        font-family: 'Yeseva One' "sans-serif";
-        font-style: normal;
-        font-weight: bold;
         font-size: 18px;
         line-height: 25px;
         text-transform: uppercase;
         color: $color1;
     }
     .main__How-we-are-working__inf__text__name {
-        font-family: 'Yeseva One' "sans-serif";
-        font-style: normal;
-        font-weight: bold;
         font-size: 15px;
         line-height: 23px;
         text-transform: uppercase;
@@ -57,6 +49,7 @@
         font-size: 15px;
         line-height: 25px;
         color: $color1;
+        font-weight: 400;
     }
 }
 
@@ -75,8 +68,8 @@
         font-family: 'FuturaBookC', sans-serif;
         font-size: 15px;
         line-height: 18px;
-        color: #FFFFFF;
-        text-shadow: 1px 1px 2px gray;
+        color: $color1;
+        text-shadow: $shadow-gray;
     }
     .main__How-we-are-working__img__menu__item_span{
         text-shadow: none;
@@ -91,12 +84,7 @@
         text-decoration: underline;
         text-decoration-color:$color2;
     }
-
 }
-    
-    
-    
-
 .main__How-we-are-working__img__menu__item {
     width: 33%;
 }
@@ -105,10 +93,8 @@
         display:none;
     }
 }
-
 @media (max-width: 365px){
     .main__How-we-are-working-wrapper {
         display:none;
     }
-
 }
