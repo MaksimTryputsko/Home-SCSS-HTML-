@@ -7,6 +7,11 @@ ul {
 }
 body{
     margin:0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
 }
 a:hover{
     @include hover-for-batton-red;

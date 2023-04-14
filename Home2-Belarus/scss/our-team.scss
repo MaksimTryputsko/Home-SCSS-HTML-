@@ -1,42 +1,36 @@
 .main__our-team {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap:10px;
+    gap: 10px;
     padding-top: 100px;
 }
 .main__our-team__text {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:15px;
+    gap: 15px;
 
 }
 .main__our-team__text__h {
-    font-family: 'Yeseva One', sans-serif;
-    font-style: bold;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
     text-transform: uppercase;
 }
 .main__our-team__text__p {
     font-family: 'FuturaBookC', sans-serif;
     font-size: 20px;
     line-height: 27px;
+    font-weight: 400;
 }
-.main__our-team__foto {
-    
+.main__our-team__foto {   
     display: flex;
-    gap:10px;
-   
+    gap: 10px;  
 } 
 .main__our-team__foto__absalut-1{
         position: absolute;
-        left:0.01%;
+        left: 0.01%;
         top: 0.01%;
     }
 .main__our-team__foto__item {
@@ -64,13 +58,14 @@
     line-height: 34px;
     text-align: center;
     color: $color3;
+    font-weight: 400;
 }
 @media(max-width:1100px){
     .main__our-team {
         padding-top: 1100px;
     }
     .main__our-team__foto {
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
@@ -79,7 +74,7 @@
 }
 @media(max-width:491px){
     .main__our-team__footer__p {
-        display:none;
+        display: none;
     }
 
 }
@@ -88,11 +83,11 @@
         padding-top: 1100px;
     }
     .main__our-team__foto {
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
     .main__our-team__footer__p {
-        display:none;
+        display: none;
     }
     .main__our-team__foto__item {
         width: 350px;

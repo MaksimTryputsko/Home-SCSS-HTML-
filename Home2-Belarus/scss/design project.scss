@@ -16,22 +16,16 @@
     gap:15px;
 }
 .main__design-project__name_h {
-    font-family: 'Yeseva One';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-text-transform: uppercase;
-font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .main__design-project__name_text {
     font-family: 'FuturaBookC';
-    font-size: 20px;
     line-height: 27px;
     text-align: center;
     color:$color3;
+    font-weight: 400;
 }
 .main__design-project__imgs {
     display:flex;
@@ -47,7 +41,6 @@ font-weight: bold;
         color: #959595;
     }
     span{
-        font-family: 'Yeseva One';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -68,23 +61,6 @@ font-weight: bold;
     position: absolute;
     bottom:1%;
     right: 8.6%;
-    // ul{ padding-top: 10px;
-    //     padding-left: 40px;
-    //     list-style-position: inside;
-    //     text-align: left;
-    //     font-family: 'FuturaBookC';
-    //     font-size: 15px;
-    //     line-height: 25px;
-    //     color: #959595;
-    // }
-    // span{
-    //     font-family: 'Yeseva One';
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     font-size: 18px;
-    //     line-height: 25px;
-    //     color: #363636;
-    // }
 }
 .main__design-project__imgs__item1__button {
     position: absolute;
@@ -112,23 +88,6 @@ font-weight: bold;
         height:280px;
         top: 60%;
         left: 8%;
-        // ul{ padding-top: 10px;
-        //     padding-left: 40px;
-        //     list-style-position: inside;
-        //     text-align: left;
-        //     font-family: 'FuturaBookC';
-        //     font-size: 15px;
-        //     line-height: 25px;
-        //     color: #959595;
-        // }
-        // span{
-        //     font-family: 'Yeseva One';
-        //     font-style: normal;
-        //     font-weight: 400;
-        //     font-size: 18px;
-        //     line-height: 25px;
-        //     color: #363636;
-        // }
     }
 }
 .main__design-project__imgs__item2__button {
@@ -144,8 +103,6 @@ font-weight: bold;
 }
 .main__design-project__imgs__item3 {
     position: relative;
-    
-
 }
 .main__design-project__imgs__item3__inf {
     position: absolute;
@@ -154,23 +111,6 @@ font-weight: bold;
     background-color: $color1;
     top: 60%;
     right: 14%;
-    // ul{ padding-top: 10px;
-    //     padding-left: 40px;
-    //     list-style-position: inside;
-    //     text-align: left;
-    //     font-family: 'FuturaBookC';
-    //     font-size: 15px;
-    //     line-height: 25px;
-    //     color: #959595;
-    // }
-    // span{
-    //     font-family: 'Yeseva One';
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     font-size: 18px;
-    //     line-height: 25px;
-    //     color: #363636;
-    // }
 }
 .main__design-project__imgs__item3__button {
     position: absolute;
@@ -206,21 +146,20 @@ font-weight: bold;
         bottom: -270px;
         right: 28%;
     }
-
 }
 @media (max-width:540px){
-    .main__design-project__name_h{
+    .main__design-project__name_h {
         display:none;
     }
-    .main__design-project__name_img{
+    .main__design-project__name_img {
         display:none;
     }
 }
 @media(max-width:423px){
-    .main__design-project__name_img{
+    .main__design-project__name_img {
         display:none;
     }
-    .main__design-project__name_text{
+    .main__design-project__name_text {
         padding-top: 30px;
     }
 }
@@ -238,7 +177,7 @@ font-weight: bold;
         color:$color1;
     }
     .design-project-wrapper{
-        background-color: black;
+        background-color: $bg-color;
     }
     .main__design-project__name_text{
         text-align:center;
@@ -250,25 +189,25 @@ font-weight: bold;
     .main__design-project {
         padding-top:780px;
     }
-    .main__design-project__imgs{
+    .main__design-project__imgs {
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap:30px;
     }
-   .logo{
+   .logo {
        width: 330px;
        height: 350px;
    }
-   .main__design-project__imgs__item1__inf{
+   .main__design-project__imgs__item1__inf {
        width: 250px;
        height: 190px;
        top: 40%;
    }
    .main__design-project__imgs__item1__button {
-       top:390px;
-    right:34%;
+        top:390px;
+        right:34%;
 }
    .main__design-project__imgs__item2 {
         .main__design-project__imgs__item2__inf {
@@ -276,7 +215,6 @@ font-weight: bold;
             height: 260px;
             left: 0.1%;
             top:40%;
-
         }
     }
     .main__design-project__imgs__item2__button {
@@ -292,9 +230,9 @@ font-weight: bold;
        left: 1px;
    }
    .main__design-project__imgs__item3__button{
-    position: relative;
-       bottom: -280px;
-       left:-50px;
+        position: relative;
+        bottom: -280px;
+        left:-50px;
    }
 }
 

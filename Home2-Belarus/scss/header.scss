@@ -23,7 +23,7 @@
         list-style: none;
         color: $color1; 
     }
-    a{
+    a{  font-weight: 400;
         text-decoration: none;
         color:$color1;
     }
@@ -39,8 +39,6 @@
         @include batton;
     }
     .header__tel-bottom__bottom_size:hover{
-        // background: white;
-        // color: black;
         @include hover-for-batton;
     }
 }
@@ -48,26 +46,22 @@
     .header__nav{
         display: none;
     }
-
 }
 @media (max-width:536px){
     .header__tel-bottom__bottom_size {
         display:none;
-        
     }
-
 }
 @media (max-width: 365px){
     .header__name{
-        // padding-bottom: 15px;
         font-size: 12px;
         line-height: 14px;
     }
     .header__tel-bottom {
-    gap:0px;
-    color: $color1;
-    font-size: 12px;
-    line-height: 14px; 
+        gap:0px;
+        color: $color1;
+        font-size: 12px;
+        line-height: 14px; 
     }
     .header__tel-bottom__bottom_size {
         display:none;

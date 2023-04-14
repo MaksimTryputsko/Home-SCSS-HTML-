@@ -29,6 +29,7 @@
   color: white;
 }
 .header__nav a {
+  font-weight: 400;
   text-decoration: none;
   color: white;
 }
@@ -96,6 +97,11 @@ ul {
 
 body {
   margin: 0;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 a:hover {
@@ -104,7 +110,7 @@ a:hover {
 }
 
 .Main__bg-Houpt {
-  background-image: url(../img/img-bg1/bg-balck.png);
+  background-image: url(../img/img-bg1/bg-black.png);
 }
 
 .main__bg-1 {
@@ -213,7 +219,7 @@ a:hover {
   color: white;
   outline: none;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid white;
   border-radius: 2px;
 }
 
@@ -339,8 +345,6 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 0px;
-  padding-left: 0px;
   padding-top: 10px;
   color: white;
 }
@@ -382,8 +386,6 @@ a:hover {
 }
 .main__bg2__inf__characteristics span {
   font-family: "Roboto", "sans-serif";
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
@@ -391,7 +393,6 @@ a:hover {
 }
 .main__bg2__inf__characteristics p {
   font-family: "Roboto", "sans-serif";
-  font-weight: bold;
   font-size: 15px;
   line-height: 20px;
   color: white;
@@ -433,8 +434,6 @@ a:hover {
 }
 .main__bg-2__h-name ul li {
   font-family: "Roboto", "sans-serif";
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
@@ -478,10 +477,7 @@ a:hover {
 }
 .main__bg2__camera span {
   font-family: "Roboto", "sans-serif";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -648,6 +644,7 @@ a:hover {
   gap: 15px;
 }
 .main_wrapper-houpt-inf__information div {
+  font-weight: 400;
   max-width: 680px;
   font-family: "FuturaBookC";
   font-size: 20px;
@@ -729,7 +726,7 @@ a:hover {
     text-align: center;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: white;
     order: 3;
   }
 }
@@ -744,7 +741,7 @@ a:hover {
     padding-right: 17px;
   }
   .Main_wrapper-houpt-inf span {
-    color: rgba(255, 255, 255, 0.5);
+    color: #959595;
   }
   .Main_wrapper-houpt-inf input {
     width: 300px;
@@ -800,7 +797,7 @@ a:hover {
     text-align: center;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: white;
     order: 3;
   }
 }
@@ -1067,7 +1064,6 @@ a:hover {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
-  font-weight: bold;
 }
 
 .main__leave__box-leav__inf_input {
@@ -1119,7 +1115,6 @@ a:hover {
   font-family: "FuturaDemiC";
   font-size: 13px;
   line-height: 18px;
-  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1141,8 +1136,6 @@ a:hover {
 .main__leave__box-leav-pig_inf {
   padding-bottom: 20px;
   font-family: "FuturaDemiC";
-  font-size: 20px;
-  font-weight: bold;
   line-height: 25px;
   color: #E3B873;
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
@@ -1364,22 +1357,16 @@ a:hover {
 }
 
 .main__design-project__name_h {
-  font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 .main__design-project__name_text {
   font-family: "FuturaBookC";
-  font-size: 20px;
   line-height: 27px;
   text-align: center;
   color: #363636;
+  font-weight: 400;
 }
 
 .main__design-project__imgs {
@@ -1398,7 +1385,6 @@ a:hover {
   color: #959595;
 }
 .main__design-project__imgs span {
-  font-family: "Yeseva One";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1587,7 +1573,7 @@ a:hover {
     color: white;
   }
   .design-project-wrapper {
-    background-color: black;
+    background-color: #131313;
   }
   .main__design-project__name_text {
     text-align: center;
@@ -1663,8 +1649,6 @@ a:hover {
 }
 
 .main__How-we-are-working__inf__h div {
-  font-family: "Yeseva One";
-  font-style: normal;
   font-weight: 400;
   font-size: 27px;
   line-height: 37px;
@@ -1684,18 +1668,12 @@ a:hover {
   gap: 15px;
 }
 .main__How-we-are-working__inf__text .main__How-we-are-working__inf__text__namber {
-  font-family: "Yeseva One" "sans-serif";
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
   color: white;
 }
 .main__How-we-are-working__inf__text .main__How-we-are-working__inf__text__name {
-  font-family: "Yeseva One" "sans-serif";
-  font-style: normal;
-  font-weight: bold;
   font-size: 15px;
   line-height: 23px;
   text-transform: uppercase;
@@ -1706,6 +1684,7 @@ a:hover {
   font-size: 15px;
   line-height: 25px;
   color: white;
+  font-weight: 400;
 }
 
 .main__How-we-are-working__img {
@@ -1724,7 +1703,7 @@ a:hover {
   font-family: "FuturaBookC", sans-serif;
   font-size: 15px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: white;
   text-shadow: 1px 1px 2px gray;
 }
 .main__How-we-are-working__img__menu .main__How-we-are-working__img__menu__item_span {
@@ -1774,11 +1753,6 @@ a:hover {
 }
 
 .main__our-team__text__h {
-  font-family: "Yeseva One", sans-serif;
-  font-style: bold;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   text-transform: uppercase;
 }
 
@@ -1786,6 +1760,7 @@ a:hover {
   font-family: "FuturaBookC", sans-serif;
   font-size: 20px;
   line-height: 27px;
+  font-weight: 400;
 }
 
 .main__our-team__foto {
@@ -1824,6 +1799,7 @@ a:hover {
   line-height: 34px;
   text-align: center;
   color: #363636;
+  font-weight: 400;
 }
 
 @media (max-width: 1100px) {
@@ -1881,14 +1857,9 @@ a:hover {
 }
 
 .main__our-clients__text__h {
-  font-family: "Yeseva One", "sans-serif";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  color: #181818;
+  color: #131313;
 }
 
 .main__our-clients__text__p {
@@ -1897,6 +1868,7 @@ a:hover {
   line-height: 27px;
   text-align: center;
   color: #363636;
+  font-weight: 400;
 }
 
 .main__our-clients__characteristics {
@@ -1920,9 +1892,6 @@ a:hover {
   gap: 15px;
 }
 .main__our-clients__characteristics__h div {
-  font-family: "Yeseva One", "sans-srif";
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   color: #181818;
@@ -1933,6 +1902,7 @@ a:hover {
   font-size: 15px;
   line-height: 180%;
   color: #959595;
+  font-weight: 400;
 }
 
 .test99 {
@@ -1946,7 +1916,7 @@ a:hover {
   height: 445px;
   position: absolute;
   top: 52%;
-  left: 27%;
+  left: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1961,11 +1931,6 @@ a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 .ask .ask__name {
-  font-family: "Yeseva One", "sans-serif";
-  font-style: bold;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -2203,6 +2168,7 @@ footer {
   color: white;
 }
 .footer__nav a {
+  font-weight: 400;
   text-decoration: none;
   color: white;
 }
