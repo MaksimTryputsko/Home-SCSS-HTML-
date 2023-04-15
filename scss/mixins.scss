@@ -73,3 +73,12 @@
     background: red;
     color: black;
 }
+@mixin i-agree{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'FuturaBookC';
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+}

@@ -1,18 +1,18 @@
 .main__map-bg{
 background-image: url(../img/map/bg/image\ 7.2.png);
-width: 100%;
+// width: 100%;
 height: 953px;
 // filter: brightness(40%);
 position: relative;
 }
-// .main__map-bg:after {
-//         content: '';
-//         width: 100%;
-//         height: 100%;
-//         position: absolute;
-//         top: 0; left: 0;
-//         background-color: rgba(0,0,0,0.7);
-// }
+.main__map-bg:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        background-color: rgba(0,0,0,0.7);
+}
 .main__map-bg__wrapper{
     
     padding-top: 120px;
@@ -23,22 +23,22 @@ position: relative;
     z-index:2;
 }
 .main__map-bg__box__inf {
-z-index:2;
-font-family: 'Yeseva One';
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-text-transform: uppercase;
-color: $color2;
-}
-.main__map-bg__box__map {
-    
+    z-index:2;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color2;
 }
 @media(max-width:1100px){
     .main__map-bg{
         margin-top: 1200px;
+    }
+    .main__map-bg:after {
+        display: none;
     }
     .main__map-bg__wrapper{
         padding-top:520px;
@@ -53,7 +53,6 @@ color: $color2;
     .main__map-bg__box__map {
         order:1;   
     }
-
 }
 @media(max-width:985px){
     .main__map-bg__box__map__item{
@@ -74,8 +73,6 @@ color: $color2;
     .main__map-bg__wrapper{
         padding-top:380px;
         background-color: $bg-color;
-    }
-    .main__map-bg__box {
     }
     .main__map-bg__wrapper {
         padding-left: 10px;

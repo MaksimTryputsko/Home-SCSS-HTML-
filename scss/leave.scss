@@ -51,9 +51,19 @@
 }
 .main__leave__box-leav__inf_agree {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap:10px;
-    span{
-        color:$color1;
+    div{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'FuturaBookC';
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #FFFFFF;
+
     }
 
 }
