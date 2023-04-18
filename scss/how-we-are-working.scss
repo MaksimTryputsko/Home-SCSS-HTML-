@@ -22,11 +22,22 @@
         color:$color2;
     }
     p{
-        font-family: 'FuturaDemiC';
+        font-family: 'Roboto';
         font-size: 15px;
         line-height: 21px;
         text-transform: uppercase;
     }
+}
+.main__How-we-are-working__inf__h__box{
+    display:flex;
+    align-items: center;
+    gap: 30px;
+}
+.main__How-we-are-working__inf__h__box__line{
+    margin-top: 30px;
+    width: 92px;
+    height: 1px;
+    background-color: $color2;
 }
 .main__How-we-are-working__inf__text {
     display:flex;
@@ -45,12 +56,27 @@
         color: $color2;
     }
     .main__How-we-are-working__inf__text__text {
-        font-family: 'FuturaBookC', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 15px;
         line-height: 25px;
         color: $color1;
         font-weight: 400;
     }
+}
+.main__How-we-are-working__inf__img{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+.main__How-we-are-working__inf__img__kreis{
+    width: 9.5px;
+    height: 9.5px;
+    border-radius: 50%;
+    background-color: $color3;
+}
+.main__How-we-are-working__inf__img__kreis:hover{
+    background-color: $color1;
+    cursor: pointer;
 }
 
 .main__How-we-are-working__img {
@@ -65,24 +91,28 @@
     gap:2px;
     
     h3,span {
-        font-family: 'FuturaBookC', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 15px;
         line-height: 18px;
-        color: $color1;
-        text-shadow: $shadow-gray;
-    }
-    .main__How-we-are-working__img__menu__item_span{
-        text-shadow: none;
-        text-decoration-color:$color2;
+        color:$color4;
+        opacity: 0.5;
     }
     h3{
         text-decoration: underline;
         text-decoration-color:$color2;
     }
+    h3,span:hover {
+        color: $color1;
+        opacity: 1;
+        cursor: pointer;
+    }
     .main__How-we-are-working__img__menu__item_h4{
-        text-shadow: none;
-        text-decoration: underline;
-        text-decoration-color:$color2;
+       opacity:0.5;
+    }
+    .main__How-we-are-working__img__menu__item_h4:hover{
+        color: $color1;
+        opacity: 1;
+        cursor: pointer;
     }
 }
 .main__How-we-are-working__img__menu__item {

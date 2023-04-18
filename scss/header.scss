@@ -1,7 +1,8 @@
 
 .header {
     max-width: 100%;
-    padding-top: 24px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     max-width: 100%;
     display: flex;
     justify-content: space-around;
@@ -45,6 +46,10 @@
 @media (max-width: 1110px){
     .header__nav{
         display: none;
+    }
+    .header {
+        display:flex;
+        justify-content: space-between;
     }
 }
 @media (max-width:536px){

@@ -1,8 +1,6 @@
 .main__map-bg{
 background-image: url(../img/map/bg/image\ 7.2.png);
-// width: 100%;
 height: 953px;
-// filter: brightness(40%);
 position: relative;
 }
 .main__map-bg:after {
@@ -14,17 +12,27 @@ position: relative;
         background-color: rgba(0,0,0,0.7);
 }
 .main__map-bg__wrapper{
-    
     padding-top: 120px;
     @include wrapper;
     gap:30px;
 }
 .main__map-bg__box__img{
     z-index:2;
+    display:flex;
+    gap:10px;
+}
+.main__map-bg__box__img__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $color2;
 }
 .main__map-bg__box__inf {
     z-index:2;
-    font-family: 'Yeseva One';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -42,7 +50,6 @@ position: relative;
     }
     .main__map-bg__wrapper{
         padding-top:520px;
-        // background-color: $bg-color;
     }
     .main__map-bg__box__inf {
         order:2;

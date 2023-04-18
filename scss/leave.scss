@@ -2,7 +2,94 @@
     @include wrapper;
     padding-left: 0px;
     position: relative;
-    height: 800px;
+    // height: 800px;
+}
+
+
+.main__leave__box-leav__home {
+    position: relative;
+}
+.main__leave__box-leav__home__line1 {
+    position: absolute;
+    top:7%;
+}
+.main__leave__box-leav__home__text1 {
+    display:flex;
+    gap:7px;
+
+    position: absolute;
+    top:17%;
+    right:6%;
+}
+
+.main__leave__box-leav__home__line2 {
+    position: absolute;
+    top:24%;
+    right:38%;
+}
+.main__leave__box-leav__home__text2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    gap:7px;
+    top: 34%;
+    right: 22%;
+}
+.main__leave__box-leav__home__line3 {
+    position: absolute;
+    top: 42%;
+    right: 32%;
+}
+.main__leave__box-leav__home__text3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    position: absolute;
+    top: 59%;
+    right: 16%;
+
+}
+.main__leave__box-leav__home__line4 {
+    position: absolute;
+    top: 67%;
+    right: 33%;
+}
+.main__leave__box-leav__home__text4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    position: absolute;
+    top: 83%;
+    right: 14%;
+}
+.main__leave__box-leav__home__line5 {
+    position: absolute;
+    top: 90%;
+    right: 44%;
+}
+.main__leave__box-leav__home__text__namber {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: $color2;
+    color: $color1;
+}
+.main__leave__box-leav__home__text__text {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 21px;
+    color:$color3;
+    font-weight: bold;
 }
 .main__leave__box-leav {
     display: flex;
@@ -11,6 +98,7 @@
 }
 
 .main__leave__box-leav__inf {
+    margin-top: 180px;
     background-image: url("../img/leave/Rectangle\ 7.6.svg");
     width: 506px;
     height: 509px;
@@ -19,9 +107,20 @@
     justify-content: space-around;  
     align-items: center;
     color: $color1;
+}        
+.main__leave__box-leav__inf__bg{
+    background-image: url("../img/leave/Rectangle\ 7.6.svg");
+    width: 506px;
+    height: 509px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    align-items: center;
+    color: $color1;
+
 }
 .main__leave__box-leav__inf_h {
-    font-family: 'FuturaDemiC';
+    font-family: 'Roboto';
     font-size: 20px;
     line-height: 25px;
     text-align: center;
@@ -32,43 +131,48 @@
     justify-content: flex-start;
     gap:25px;
     span {
-        font-family: 'FuturaBookC';
+        font-family: 'Roboto';
         font-size: 15px;
         line-height: 20px;
         color: $color6;
     }
+    .test-input{
     input{
         width: 400px;
         background: transparent;
         border-top: none;
         border-left: none;
         border-right: none;
-        font-family: 'FuturaMediumC';
+        font-family: 'Roboto';
         font-size: 18px;
         line-height: 25px;
         color:$color1;
     }
 }
+}
+
 .main__leave__box-leav__inf_agree {
     display: flex;
     justify-content: center;
     align-items: center;
     gap:10px;
-    div{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'FuturaBookC';
-        font-size: 16px;
-        line-height: 22px;
-        font-weight: 400;
-        color: #FFFFFF;
-
+    input{
+        background-color:$color2;
+        color: $color2;
     }
-
+    .main__leave__box-leav__inf_agree__inf{
+        @include i-agree;
+        color: $color1;
+    }
+    .checkbox__label{
+        color:$color1;
+    }
 }
 .main__leave__box-leav__inf_button{
-    width: 5%;
+    position: relative;
+    left: 23%;
+    font-weight: bold;
+    width: 100%;
     button{
         @include batton;
         width: 215px ;
@@ -84,20 +188,29 @@
     }
 }
 .main__leave__box-leav-pig {
-    position: absolute;
+    margin-top: 40px;
     width: 80%;
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    gap:20px;
     bottom: 0.1%;
     left: 0.1%;
 }
+.main__leave__box-leav-pig__img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: $color2;
+}
 .main__leave__box-leav-pig_inf {
-    padding-bottom: 20px;
-    font-family: 'FuturaDemiC';
+    font-family: 'Roboto';
     line-height: 25px;
     color: $color2;
-    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    text-shadow: $color-pig;
 }
 @media (max-width: 1110px){
     .main__leave_wrapper {

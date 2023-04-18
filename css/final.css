@@ -1,6 +1,7 @@
 .header {
   max-width: 100%;
-  padding-top: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   max-width: 100%;
   display: flex;
   justify-content: space-around;
@@ -55,13 +56,16 @@
   position: relative;
 }
 .header__tel-bottom .header__tel-bottom__bottom_size:hover {
-  background: white;
-  color: black;
+  opacity: 0.6;
 }
 
 @media (max-width: 1110px) {
   .header__nav {
     display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media (max-width: 536px) {
@@ -105,8 +109,7 @@ body {
 }
 
 a:hover {
-  background: red;
-  color: black;
+  color: #E3B873;
 }
 
 .Main__bg-Houpt {
@@ -136,14 +139,29 @@ a:hover {
 
 .main__main__bg-1__box-instagram {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
-  width: 40px;
   writing-mode: vertical-rl;
-  color: #E3B873;
   background-color: #131313;
+  z-index: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: #131313;
+  gap: 10px;
+}
+
+.main__main__bg-1__box-instagram__name {
+  color: #E3B873;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.main__main__bg-1__box-instagram__line {
+  width: 1px;
+  height: 51px;
+  background-color: #E3B873;
 }
 
 .main__main__bg-1__box-information {
@@ -208,8 +226,7 @@ a:hover {
 }
 
 .main__main__bg-1__box-information_button-1:hover {
-  background: white;
-  color: black;
+  opacity: 0.6;
 }
 
 .main__main__bg-1__box-information_button-2 {
@@ -221,11 +238,11 @@ a:hover {
   background: transparent;
   border: 1px solid white;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .main__main__bg-1__box-information_button-2:hover {
-  background: white;
-  color: black;
+  opacity: 0.6;
 }
 
 .main__box-scroll {
@@ -242,11 +259,20 @@ a:hover {
 }
 .main__box-scroll span {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
   color: white;
+}
+.main__box-scroll .main__box-scroll__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29px;
+  height: 29px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  text-align: center;
 }
 
 @media (max-width: 590px) {
@@ -369,14 +395,27 @@ a:hover {
 }
 
 .main__bg2__inf__h-name {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.main__bg2__inf__h-name__text {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 27px;
   line-height: 37px;
   letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #E3B873;
+}
+
+.main__bg2__inf__h-name__line {
+  width: 91px;
+  height: 1px;
+  background-color: #E3B873;
+  margin-bottom: 15px;
 }
 
 .main__bg2__inf__characteristics {
@@ -409,6 +448,7 @@ a:hover {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 60px;
 }
 
 .main__bg2__inf__characteristics-item {
@@ -420,6 +460,18 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
+}
+
+.main__bg2__inf__img__point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main__bg2__inf__img__point:hover {
+  cursor: pointer;
+  background-color: white;
 }
 
 .main__bg-2__h-name {
@@ -438,14 +490,13 @@ a:hover {
   line-height: 19px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
-}
-.main__bg-2__h-name ul li span {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: uppercase;
+}
+.main__bg-2__h-name ul li:hover {
+  text-decoration: underline;
   color: #E3B873;
+  cursor: pointer;
 }
 
 .main__bg2__foto {
@@ -462,6 +513,13 @@ a:hover {
 }
 
 .main_bg2__fiti__items__play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #E3B873;
   position: absolute;
   left: 85%;
   bottom: 42%;
@@ -477,13 +535,25 @@ a:hover {
 }
 .main__bg2__camera span {
   font-family: "Roboto", "sans-serif";
-  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: white;
 }
 .main__bg2__camera .main__bg2__inf__img_paddint-bottom {
   padding-bottom: 10px;
+}
+
+.main__bg2__camera__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.main__bg2__camera__box__line {
+  width: 32px;
+  height: 1.5px;
+  background-color: #E3B873;
 }
 
 .main__bg__wrapper-video {
@@ -515,13 +585,26 @@ a:hover {
 }
 
 .main__bg2__video__play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  background-color: #E3B873;
+  border-radius: 50%;
   z-index: 2;
   position: absolute;
-  top: 33%;
+  top: 40%;
   left: 47%;
+  padding-left: 5px;
 }
 
 @media (max-width: 1200px) {
+  .main__bg2__inf__h-name {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
   .main__bg2__foto {
     display: none;
   }
@@ -612,10 +695,6 @@ a:hover {
     top: 30%;
     left: 40%;
   }
-  .main__bg2__video__play__img {
-    height: 80px;
-    width: 80px;
-  }
   .main__bg__wrapper-video {
     max-width: 100%;
     height: 100%;
@@ -627,6 +706,9 @@ a:hover {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .main__bg2__inf__h-name__line {
+    display: none;
   }
 }
 .Main_bg-white {
@@ -655,7 +737,7 @@ a:hover {
 .main_wrapper-houpt-inf__information div {
   font-weight: 400;
   max-width: 680px;
-  font-family: "FuturaBookC";
+  font-family: "Roboto";
   font-size: 20px;
   line-height: 34px;
   text-align: center;
@@ -671,8 +753,8 @@ a:hover {
 }
 .main_wrapper-houpt-inf__registration input {
   border: none;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-  font-family: "FuturaBookC";
+  border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+  font-family: "Roboto";
   font-size: 18px;
   line-height: 24px;
   color: #363636;
@@ -683,6 +765,12 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
+.box-test111 span {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
 }
 
 .main_wrapper-houpt-inf__registration_button_characteristics {
@@ -696,11 +784,12 @@ a:hover {
   position: relative;
   height: 47px;
   width: 200px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .main_wrapper-houpt-inf__registration_button_characteristics:hover {
-  background: red;
-  color: black;
+  opacity: 0.8;
 }
 
 .main_wraper-houpt-inf__I-agree {
@@ -709,16 +798,58 @@ a:hover {
   align-items: center;
   gap: 5px;
 }
-.main_wraper-houpt-inf__I-agree div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "FuturaBookC";
+
+.main_wraper-houpt-inf__I-agree__input {
+  position: relative;
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__label {
   font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
   color: #181818;
-  transform: rotate(-0.07deg);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkbox__label:before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #E3B873;
+  border-radius: 10%;
+  position: absolute;
+  top: 6px;
+  left: -27px;
+  z-index: 1;
+}
+
+.checkbox__label:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/checkbox/1.png") no-repeat;
+  background-size: 12px 12px;
+  opacity: 0;
+  position: absolute;
+  top: 9px;
+  left: -24px;
+  z-index: 2;
+  transition: opacity 0.1s linear;
+}
+
+.checkbox__input:checked + .checkbox__label:before {
+  background-color: #E3B873;
+}
+
+.checkbox__input:checked + .checkbox__label:after {
+  opacity: 1;
 }
 
 @media (max-width: 1100px) {
@@ -837,6 +968,10 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+.main__TYPES-OF-REPAIR_wrapper span {
+  position: relative;
+  left: -20px;
+}
 
 .main__TYPES-OF-REPAIR_wrapper__name {
   padding-top: 120px;
@@ -847,7 +982,7 @@ a:hover {
   gap: 10px;
 }
 .main__TYPES-OF-REPAIR_wrapper__name span {
-  font-family: "Yeseva One";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -855,6 +990,19 @@ a:hover {
   text-align: center;
   text-transform: uppercase;
   color: #181818;
+}
+
+.main__TYPES-OF-REPAIR_wrapper__name__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.main__TYPES-OF-REPAIR_wrapper__name__box__line {
+  width: 32px;
+  height: 1.5px;
+  background-color: #E3B873;
 }
 
 .main__TYPES-OF-REPAIR_wrapper__img {
@@ -866,7 +1014,7 @@ a:hover {
   gap: 30px;
 }
 .main__TYPES-OF-REPAIR_wrapper__img ul {
-  font-family: "Yeseva One";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -874,7 +1022,7 @@ a:hover {
   color: #363636;
 }
 .main__TYPES-OF-REPAIR_wrapper__img li {
-  font-family: "FuturaBookC";
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 25px;
   color: #959595;
@@ -891,14 +1039,14 @@ a:hover {
   align-items: center;
   width: 300px;
   height: 286px;
-  background-image: url(../img/main__TYPES-OF-REPAIR_wrapper/img-items-bg/Rectangle\ 4.22.svg);
+  background-color: white;
   position: absolute;
   left: 7%;
   bottom: 17%;
 }
 
 .main__TYPES-OF-REPAIR_wrapper__img_characteristics-2 {
-  background-image: url(../img/main__TYPES-OF-REPAIR_wrapper/img-items-bg/Rectangle\ 4.22\ \(1\).svg);
+  background-color: white;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -911,7 +1059,7 @@ a:hover {
 }
 
 .main__TYPES-OF-REPAIR_wrapper__img_characteristics-3 {
-  background-image: url(../img/main__TYPES-OF-REPAIR_wrapper/img-items-bg/Rectangle\ 4.23.svg);
+  background-color: white;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -932,7 +1080,7 @@ a:hover {
 .main__TYPES-OF-REPAIR_wrapper__img__button-2 {
   position: absolute;
   bottom: 15%;
-  left: 10%;
+  left: 12.5%;
 }
 
 .main__TYPES-OF-REPAIR_wrapper__img__button-3 {
@@ -952,7 +1100,7 @@ a:hover {
   position: relative;
   width: 210px;
   height: 45px;
-  font-family: "Yeseva One";
+  font-family: "Roboto";
   font-style: normal;
   font-size: 18px;
   line-height: 25px;
@@ -960,8 +1108,7 @@ a:hover {
 }
 
 .main__TYPES-OF-REPAIR_wrapper__img__button_characteristics:hover {
-  background: red;
-  color: black;
+  opacity: 0.6;
 }
 
 @media (max-width: 1100px) {
@@ -1065,7 +1212,96 @@ a:hover {
   align-items: center;
   padding-left: 0px;
   position: relative;
-  height: 800px;
+}
+
+.main__leave__box-leav__home {
+  position: relative;
+}
+
+.main__leave__box-leav__home__line1 {
+  position: absolute;
+  top: 7%;
+}
+
+.main__leave__box-leav__home__text1 {
+  display: flex;
+  gap: 7px;
+  position: absolute;
+  top: 17%;
+  right: 6%;
+}
+
+.main__leave__box-leav__home__line2 {
+  position: absolute;
+  top: 24%;
+  right: 38%;
+}
+
+.main__leave__box-leav__home__text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 7px;
+  top: 34%;
+  right: 22%;
+}
+
+.main__leave__box-leav__home__line3 {
+  position: absolute;
+  top: 42%;
+  right: 32%;
+}
+
+.main__leave__box-leav__home__text3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  position: absolute;
+  top: 59%;
+  right: 16%;
+}
+
+.main__leave__box-leav__home__line4 {
+  position: absolute;
+  top: 67%;
+  right: 33%;
+}
+
+.main__leave__box-leav__home__text4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  position: absolute;
+  top: 83%;
+  right: 14%;
+}
+
+.main__leave__box-leav__home__line5 {
+  position: absolute;
+  top: 90%;
+  right: 44%;
+}
+
+.main__leave__box-leav__home__text__namber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  color: white;
+}
+
+.main__leave__box-leav__home__text__text {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 21px;
+  color: #363636;
+  font-weight: bold;
 }
 
 .main__leave__box-leav {
@@ -1075,6 +1311,18 @@ a:hover {
 }
 
 .main__leave__box-leav__inf {
+  margin-top: 180px;
+  background-image: url("../img/leave/Rectangle 7.6.svg");
+  width: 506px;
+  height: 509px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.main__leave__box-leav__inf__bg {
   background-image: url("../img/leave/Rectangle 7.6.svg");
   width: 506px;
   height: 509px;
@@ -1086,7 +1334,7 @@ a:hover {
 }
 
 .main__leave__box-leav__inf_h {
-  font-family: "FuturaDemiC";
+  font-family: "Roboto";
   font-size: 20px;
   line-height: 25px;
   text-align: center;
@@ -1099,18 +1347,18 @@ a:hover {
   gap: 25px;
 }
 .main__leave__box-leav__inf_input span {
-  font-family: "FuturaBookC";
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
-.main__leave__box-leav__inf_input input {
+.main__leave__box-leav__inf_input .test-input input {
   width: 400px;
   background: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
-  font-family: "FuturaMediumC";
+  font-family: "Roboto";
   font-size: 18px;
   line-height: 25px;
   color: white;
@@ -1122,7 +1370,11 @@ a:hover {
   align-items: center;
   gap: 10px;
 }
-.main__leave__box-leav__inf_agree div {
+.main__leave__box-leav__inf_agree input {
+  background-color: #E3B873;
+  color: #E3B873;
+}
+.main__leave__box-leav__inf_agree .main__leave__box-leav__inf_agree__inf {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1130,11 +1382,17 @@ a:hover {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: white;
+}
+.main__leave__box-leav__inf_agree .checkbox__label {
+  color: white;
 }
 
 .main__leave__box-leav__inf_button {
-  width: 5%;
+  position: relative;
+  left: 23%;
+  font-weight: bold;
+  width: 100%;
 }
 .main__leave__box-leav__inf_button button {
   width: 180px;
@@ -1154,23 +1412,32 @@ a:hover {
   text-transform: uppercase;
 }
 .main__leave__box-leav__inf_button button:hover {
-  background: white;
-  color: black;
+  opacity: 0.6;
 }
 
 .main__leave__box-leav-pig {
-  position: absolute;
+  margin-top: 40px;
   width: 80%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
   bottom: 0.1%;
   left: 0.1%;
 }
 
+.main__leave__box-leav-pig__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #E3B873;
+}
+
 .main__leave__box-leav-pig_inf {
-  padding-bottom: 20px;
-  font-family: "FuturaDemiC";
+  font-family: "Roboto";
   line-height: 25px;
   color: #E3B873;
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
@@ -1226,19 +1493,21 @@ a:hover {
   justify-content: flex-end;
   gap: 20px;
   color: #E3B873;
-  font-family: "Proxima Nova";
+  font-family: "Roboto";
   font-size: 20px;
   line-height: 34px;
-}
-.main__bg-fantasie_wrapper__box-text-ul span {
-  text-decoration: underline;
 }
 .main__bg-fantasie_wrapper__box-text-ul li {
   list-style-type: none;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Roboto";
   font-size: 20px;
   line-height: 34px;
+}
+.main__bg-fantasie_wrapper__box-text-ul li:hover {
+  text-decoration: underline;
+  color: #E3B873;
+  cursor: pointer;
 }
 
 .main__bg-fantasie_wrapper__box-imgs {
@@ -1383,6 +1652,19 @@ a:hover {
   max-height: 300px;
 }
 
+.main__design-project__name_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__design-project__name_img__line {
+  width: 32px;
+  height: 1.5px;
+  background-color: #E3B873;
+}
+
 .main__design-project__name {
   display: flex;
   flex-direction: column;
@@ -1397,7 +1679,7 @@ a:hover {
 }
 
 .main__design-project__name_text {
-  font-family: "FuturaBookC";
+  font-family: "Roboto";
   line-height: 27px;
   text-align: center;
   color: #363636;
@@ -1414,7 +1696,7 @@ a:hover {
   padding-left: 40px;
   list-style-position: inside;
   text-align: left;
-  font-family: "FuturaBookC";
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 25px;
   color: #959595;
@@ -1459,10 +1741,10 @@ a:hover {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .main__design-project__imgs__item1 .main__design-project__imgs__item1__button__characteristics:hover {
-  background: red;
-  color: black;
+  background-color: orangered;
 }
 
 .main__design-project__imgs__item2 {
@@ -1499,11 +1781,11 @@ a:hover {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .main__design-project__imgs__item2__button__characteristics:hover {
-  background: red;
-  color: black;
+  background-color: orangered;
 }
 
 .main__design-project__imgs__item3 {
@@ -1512,17 +1794,17 @@ a:hover {
 
 .main__design-project__imgs__item3__inf {
   position: absolute;
-  height: 325px;
+  width: 325px;
   height: 412px;
   background-color: white;
   top: 60%;
-  right: 14%;
+  right: 9%;
 }
 
 .main__design-project__imgs__item3__button {
   position: absolute;
   bottom: -220px;
-  right: 28%;
+  left: 8%;
 }
 
 .main__design-project__imgs__item3__button__characteristics {
@@ -1540,11 +1822,11 @@ a:hover {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .main__design-project__imgs__item3__button__characteristics:hover {
-  background: red;
-  color: black;
+  background-color: orangered;
 }
 
 @media (max-width: 1100px) {
@@ -1691,10 +1973,23 @@ a:hover {
   color: #E3B873;
 }
 .main__How-we-are-working__inf__h p {
-  font-family: "FuturaDemiC";
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.main__How-we-are-working__inf__h__box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.main__How-we-are-working__inf__h__box__line {
+  margin-top: 30px;
+  width: 92px;
+  height: 1px;
+  background-color: #E3B873;
 }
 
 .main__How-we-are-working__inf__text {
@@ -1715,11 +2010,29 @@ a:hover {
   color: #E3B873;
 }
 .main__How-we-are-working__inf__text .main__How-we-are-working__inf__text__text {
-  font-family: "FuturaBookC", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 25px;
   color: white;
   font-weight: 400;
+}
+
+.main__How-we-are-working__inf__img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main__How-we-are-working__inf__img__kreis {
+  width: 9.5px;
+  height: 9.5px;
+  border-radius: 50%;
+  background-color: #363636;
+}
+
+.main__How-we-are-working__inf__img__kreis:hover {
+  background-color: white;
+  cursor: pointer;
 }
 
 .main__How-we-are-working__img {
@@ -1735,24 +2048,28 @@ a:hover {
   gap: 2px;
 }
 .main__How-we-are-working__img__menu h3, .main__How-we-are-working__img__menu span {
-  font-family: "FuturaBookC", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 18px;
-  color: white;
-  text-shadow: 1px 1px 2px gray;
-}
-.main__How-we-are-working__img__menu .main__How-we-are-working__img__menu__item_span {
-  text-shadow: none;
-  text-decoration-color: #E3B873;
+  color: #959595;
+  opacity: 0.5;
 }
 .main__How-we-are-working__img__menu h3 {
   text-decoration: underline;
   text-decoration-color: #E3B873;
 }
+.main__How-we-are-working__img__menu h3, .main__How-we-are-working__img__menu span:hover {
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
 .main__How-we-are-working__img__menu .main__How-we-are-working__img__menu__item_h4 {
-  text-shadow: none;
-  text-decoration: underline;
-  text-decoration-color: #E3B873;
+  opacity: 0.5;
+}
+.main__How-we-are-working__img__menu .main__How-we-are-working__img__menu__item_h4:hover {
+  color: white;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .main__How-we-are-working__img__menu__item {
@@ -1791,8 +2108,20 @@ a:hover {
   text-transform: uppercase;
 }
 
+.main__our-team__text__img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__our-team__text__img_line {
+  width: 32px;
+  padding: 1px;
+  background-color: #E3B873;
+}
+
 .main__our-team__text__p {
-  font-family: "FuturaBookC", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 27px;
   font-weight: 400;
@@ -1803,10 +2132,50 @@ a:hover {
   gap: 10px;
 }
 
-.main__our-team__foto__absalut-1 {
+.main__our-team__foto__item__text {
   position: absolute;
-  left: 0.01%;
-  top: 0.01%;
+  background-color: white;
+  color: black;
+  width: 235px;
+  height: 140px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.main__our-team__foto__item__text .h3 {
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 25px;
+}
+.main__our-team__foto__item__text .p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #959595;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+.main__our-team__foto__item__experience {
+  color: white;
+  background-color: #E3B873;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.main__our-team__foto__absalut-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: #E3B873;
+  position: absolute;
+  left: 4%;
+  top: 9%;
 }
 
 .main__our-team__foto__item {
@@ -1820,16 +2189,21 @@ a:hover {
   align-items: center;
 }
 
-.main__our-team__footer__img {
+.main__our-team__footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+
+.main__our-team__footer__img {
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
 }
 
 .main__our-team__footer__p {
-  font-family: "FuturaBookC", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 34px;
   text-align: center;
@@ -1897,8 +2271,21 @@ a:hover {
   color: #131313;
 }
 
+.main__our-clients__text__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__our-clients__text__img__line {
+  width: 32px;
+  height: 1.5px;
+  background-color: #E3B873;
+}
+
 .main__our-clients__text__p {
-  font-family: "FuturaBookC", "sans-serif";
+  font-family: "Roboto", "sans-serif";
   font-size: 20px;
   line-height: 27px;
   text-align: center;
@@ -1933,11 +2320,38 @@ a:hover {
 }
 
 .main__our-clients__characteristics__text {
-  font-family: "FuturaBookC", "sans-serif";
+  font-family: "Roboto", "sans-serif";
   font-size: 15px;
   line-height: 180%;
   color: #959595;
   font-weight: 400;
+}
+
+.main__our-clients__characteristics__box {
+  display: flex;
+  gap: 1px;
+}
+
+.main__our-clients__characteristics__item__box__item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 54px;
+  background-color: #E3B873;
+  gap: 12px;
+  color: white;
+}
+
+.main__our-clients__characteristics__item__box__item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 54px;
+  background-color: #E3B873;
+  gap: 12px;
+  color: white;
 }
 
 .test99 {
@@ -1957,10 +2371,10 @@ a:hover {
   align-items: center;
   justify-content: center;
   color: white;
-  gap: 50px;
+  gap: 45px;
 }
 .ask span {
-  font-family: "FuturaBookC";
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5);
@@ -1979,7 +2393,7 @@ a:hover {
   border-top: none;
   border-left: none;
   border-right: none;
-  font-family: "FuturaMediumC", "sans-serif";
+  font-family: "Roboto", "sans-serif";
   font-size: 18px;
   line-height: 25px;
   color: white;
@@ -1990,7 +2404,7 @@ a:hover {
   border-top: none;
   border-left: none;
   border-right: none;
-  font-family: "FuturaMediumC", "sans-serif";
+  font-family: "Roboto", "sans-serif";
   font-size: 18px;
   line-height: 25px;
   color: white;
@@ -1998,6 +2412,10 @@ a:hover {
 .ask .ask__agree {
   display: flex;
   gap: 10px;
+}
+.ask .ask__agree .checkbox__label {
+  padding-top: 5px;
+  color: white;
 }
 .ask .ask__agree div {
   display: flex;
@@ -2122,11 +2540,23 @@ a:hover {
 
 .main__map-bg__box__img {
   z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.main__map-bg__box__img__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #E3B873;
 }
 
 .main__map-bg__box__inf {
   z-index: 2;
-  font-family: "Yeseva One";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2229,8 +2659,7 @@ footer {
   color: white;
 }
 .footer__nav a:hover {
-  background: red;
-  color: black;
+  color: #E3B873;
 }
 
 .footer__tel-bottom {
@@ -2256,8 +2685,7 @@ footer {
 }
 
 .footer__tel-bottom__bottom_size:hover {
-  background: white;
-  color: black;
+  opacity: 0.6;
 }
 
 @media (max-width: 1100px) {

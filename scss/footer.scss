@@ -28,7 +28,7 @@ footer{
             color:$color1;
         }
         a:hover{
-            @include hover-for-batton-red;
+            color: $color2;
         }
 }
 .footer__tel-bottom {

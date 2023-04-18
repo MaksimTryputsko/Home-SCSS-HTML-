@@ -17,8 +17,19 @@
     text-transform: uppercase;
     color: $bg-color;   
 }
+.main__our-clients__text__img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.main__our-clients__text__img__line{
+    width: 32px;
+    height: 1.5px;
+    background-color: $color2;
+}
 .main__our-clients__text__p {
-    font-family: 'FuturaBookC',"sans-serif";
+    font-family: 'Roboto',"sans-serif";
     font-size: 20px;
     line-height: 27px;
     text-align: center;
@@ -49,11 +60,35 @@
     }
 }
 .main__our-clients__characteristics__text {
-    font-family: 'FuturaBookC', "sans-serif";
+    font-family: 'Roboto', "sans-serif";
     font-size: 15px;
     line-height: 180%;
     color: $color4;
     font-weight: 400;
+}
+.main__our-clients__characteristics__box {
+    display:flex;
+    gap: 1px;
+}
+.main__our-clients__characteristics__item__box__item1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 54px;
+    background-color: $color2;
+    gap: 12px;
+    color: $color1;
+}
+.main__our-clients__characteristics__item__box__item2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 54px;
+    background-color: $color2;
+    gap: 12px;
+    color: $color1;
 }
 .test99{
     position: relative;
@@ -71,9 +106,9 @@
     align-items: center;
     justify-content: center;
     color: $color1;
-    gap: 50px;
+    gap: 45px;
     span{
-        font-family: 'FuturaBookC';
+        font-family: 'Roboto';
         font-size: 15px;
         line-height: 20px;
         color: $color6;
@@ -91,7 +126,7 @@
             border-top: none;
             border-left: none;
             border-right: none;
-            font-family: 'FuturaMediumC',"sans-serif";
+            font-family: 'Roboto',"sans-serif";
             font-size: 18px;
             line-height: 25px;
             color:$color1;
@@ -104,13 +139,17 @@
             border-top: none;
             border-left: none;
             border-right: none;
-            font-family: 'FuturaMediumC',"sans-serif";
+            font-family: 'Roboto',"sans-serif";
             font-size: 18px;
             line-height: 25px;
             color:$color1;
         }
     }
     .ask__agree {
+        .checkbox__label{
+            padding-top: 5px;
+            color: $color1;
+        }
         display:flex;
         gap:10px;
         div{

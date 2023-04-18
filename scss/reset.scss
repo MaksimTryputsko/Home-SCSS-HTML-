@@ -14,5 +14,5 @@ body{
     line-height: 28px;
 }
 a:hover{
-    @include hover-for-batton-red;
+    color:$color2;
 }

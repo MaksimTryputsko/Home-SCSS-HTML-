@@ -1,6 +1,9 @@
 .main__TYPES-OF-REPAIR_wrapper {
     @include wrapper;
-   
+   span{
+       position: relative;
+        left:-20px;
+   }
 }
 .main__TYPES-OF-REPAIR_wrapper__name {
     padding-top: 120px;
@@ -10,15 +13,26 @@
     align-items: center;
     gap:10px;
     span {
-        font-family: 'Yeseva One';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
         line-height: 28px;
         text-align: center;
         text-transform: uppercase;
-        color: #181818;
+        color: $color8;
     }
+}
+.main__TYPES-OF-REPAIR_wrapper__name__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:7px;
+}
+.main__TYPES-OF-REPAIR_wrapper__name__box__line{
+    width: 32px;
+    height: 1.5px;
+    background-color: $color2;
 }
 .main__TYPES-OF-REPAIR_wrapper__img {
     height: 700px;
@@ -26,9 +40,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap:30px;
+    gap: 30px;
     ul{ 
-        font-family: 'Yeseva One';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -37,10 +51,10 @@
 
     }
     li{  
-        font-family: 'FuturaBookC';
+        font-family: 'Roboto';
         font-size: 15px;
         line-height: 25px;
-        color: #959595;
+        color: $color4;
         
 
     }
@@ -55,13 +69,13 @@
     align-items: center;
     width: 300px;
     height: 286px;
-    background-image: url(../img/main__TYPES-OF-REPAIR_wrapper/img-items-bg/Rectangle\ 4.22.svg) ;
+    background-color:$color1;
     position: absolute;
     left: 7%;
     bottom: 17%;
 }
 .main__TYPES-OF-REPAIR_wrapper__img_characteristics-2{
-    background-image: url(../img/main__TYPES-OF-REPAIR_wrapper/img-items-bg/Rectangle\ 4.22\ \(1\).svg) ;
+    background-color:$color1;
     position: absolute;
     display:flex;
     flex-direction: column;
@@ -73,7 +87,7 @@
     left:10%;
 }
 .main__TYPES-OF-REPAIR_wrapper__img_characteristics-3 {
-    background-image: url(../img/main__TYPES-OF-REPAIR_wrapper/img-items-bg/Rectangle\ 4.23.svg);
+    background-color:$color1;
     position: absolute;
     display:flex;
     flex-direction: column;
@@ -93,7 +107,7 @@
 .main__TYPES-OF-REPAIR_wrapper__img__button-2{
     position: absolute;
     bottom:15%;
-    left:10%;
+    left:12.5%;
 }
 .main__TYPES-OF-REPAIR_wrapper__img__button-3{
     position: absolute;
@@ -105,14 +119,14 @@
     @include batton;
     width: 210px;
     height: 45px;
-    font-family: 'Yeseva One';
+    font-family: 'Roboto';
     font-style: normal;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
 }
 .main__TYPES-OF-REPAIR_wrapper__img__button_characteristics:hover{
-    @include hover-for-batton-red;
+    @include hover-for-batton;
 }
 @media (max-width: 1100px){
     .main__TYPES-OF-REPAIR_wrapper__name {
@@ -176,7 +190,6 @@
     }
     .main__TYPES-OF-REPAIR_wrapper__img__item__logo{
         width: 300px;
-        // height: 400px;
     }
    
     .main__TYPES-OF-REPAIR_wrapper__img_characteristics-1{
@@ -209,9 +222,4 @@
         bottom: -120px;
         left: -54px;
     }
-    
-    
-
-
-
 }
